@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="View" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagen/Wifi-icon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="ipText" />
+            <Button fx:id="checkButton" defaultButton="true" mnemonicParsing="false" onAction="#onCheckIPACTION" text="CHECK IP" />
+         </children>
+      </HBox>
+      <TabPane fx:id="tabpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="SOMETIMES">
+        <tabs>
+          <Tab fx:id="locactionTab" text="Location">
+            <content>
+
+      </content>
+          </Tab>
+              <Tab fx:id="conectionTab" text="Conection">
+            <content>
+
+      </content>
+          </Tab>
+              <Tab fx:id="segurityTab" text="Segurity">
+            <content>
+
+      </content>
+          </Tab>
+        </tabs>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TabPane>
+   </children>
+</VBox>
